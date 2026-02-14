@@ -1,0 +1,36 @@
+import React, { useState } from 'react';
+import { Outlet, Navigate } from 'react-router-dom';
+import { SidebarPeminjam } from './SidebarPeminjam';
+import { useAuth } from '@/contexts/AuthContext';
+import { cn } from '@/lib/utils';
+
+export const PeminjamLayout: React.FC = () => {
+  const { isAuthenticated, user, isLoading } = useAuth();
+  const [collapsed, setCollapsed] = useState(false);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+      </div>
+    );
+  }
+
+  if (!isAuthenticated || user?.role !== 'peminjam') {
+    return <Navigate to="/login" replace />;
+  }
+
+  return (
+    <div className="min-h-screen flex w-full bg-background">
+      <SidebarPeminjam collapsed={collapsed} onCollapse={setCollapsed} />
+      <main className={cn(
+        "flex-1 min-h-screen transition-all duration-300",
+        "lg:ml-0"
+      )}>
+        <div className="p-4 lg:p-6 pt-16 lg:pt-6">
+          <Outlet />
+        </div>
+      </main>
+    </div>
+  );
+};

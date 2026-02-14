@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="#2563eb" rx="15"/>
+  <g fill="white">
+    <!-- Building icon -->
+    <rect x="25" y="30" width="50" height="50" fill="white"/>
+    <rect x="30" y="35" width="8" height="8" fill="#2563eb"/>
+    <rect x="42" y="35" width="8" height="8" fill="#2563eb"/>
+    <rect x="54" y="35" width="8" height="8" fill="#2563eb"/>
+    <rect x="30" y="47" width="8" height="8" fill="#2563eb"/>
+    <rect x="42" y="47" width="8" height="8" fill="#2563eb"/>
+    <rect x="54" y="47" width="8" height="8" fill="#2563eb"/>
+    <rect x="30" y="59" width="8" height="8" fill="#2563eb"/>
+    <rect x="54" y="59" width="8" height="8" fill="#2563eb"/>
+    <rect x="42" y="59" width="8" height="21" fill="#2563eb"/>
+    <!-- Letter P -->
+    <text x="50" y="25" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">P</text>
+  </g>
+</svg>

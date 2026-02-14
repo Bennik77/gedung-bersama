@@ -60,9 +60,8 @@ Gunakan akun berikut untuk mencoba fitur aplikasi:
 
 | Role | Email | Password | Keterangan |
 |------|-------|----------|------------|
-| **Peminjam** | `budi@email.com` | `password123` | Akun pengguna umum |
+| **Peminjam** | `budi@email.com` | `password` | Akun pengguna umum |
 | **Admin** | `admin@peminjaman.id` | `password` | Administrator sistem |
-| **Petugas** | `ahmad@peminjaman.id` | `petugas123` | Petugas lapangan |
 
 > **Catatan:** Untuk fitur OTP dan notifikasi email, disarankan mendaftar akun baru menggunakan **email asli** (Gmail/Yahoo) yang aktif.
 
